@@ -2,7 +2,7 @@ package observer_pattern.v1
 
 class WeatherData : Subject {
 
-    private lateinit var observers: MutableList<Observer>
+    private val observers = mutableListOf<Observer>()
     private var temperature = 0f
     private var humidity = 0f
     private var pressure = 0f
